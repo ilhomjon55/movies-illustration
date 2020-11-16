@@ -51,13 +51,13 @@ movies.forEach(function (movie) {
   var elNewLi = createNewEl('li', 'col-12 col-sm-4 d-flex flex-column alert-info m-2 p-2');
 
   // Create new h
-  var elNewHName = createNewEl('h3', 'h5 text-center font-weight-bold', `Name: ${movie.title}`);
+  var elNewHName = createNewEl('h3', 'h5 text-center font-weight-bold', movie.title);
 
   // Create new p
   var elNewPCast = createNewEl('p', 'p-1 m-0', `Actors: ${movie.cast.join(', ')}`);
 
   // Create new p
-  var elNewPGenre = createNewEl('p', 'border-bottom border-top border-info p-1 m-0 mt-auto', `Genre: ${movie.genres.join(',')}`);
+  var elNewPGenre = createNewEl('p', 'border-bottom border-top border-info p-1 m-0 mt-auto', `Genre: ${movie.genres.join(', ')}`);
 
   // Create new p
   var elNewPYear = createNewEl('p', 'p-1 m-0', `Released in: ${movie.year}`);
