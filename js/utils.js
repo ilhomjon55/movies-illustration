@@ -4,7 +4,7 @@ var $_ = function (selector, node = document) {
 }
 
 var $$_ = function (selector, node = document) {
-  return node.querySelector(selector);
+  return node.querySelectorAll(selector);
 }
 
 
