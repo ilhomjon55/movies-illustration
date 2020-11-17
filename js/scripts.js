@@ -16,7 +16,7 @@ Template and functional version
 ===================================================== */
 
 // Create new element function
-var createPokemonEl = function (movie) {
+var createMovieEl = function (movie) {
 
   // Clone from template
   var elMoviesItem = elMoviesTemplate.cloneNode(true);
@@ -40,7 +40,7 @@ var renderMovies = function (movies) {
 
   // Give movies arrays valuas as argument in loop and append to fragment
   movies.forEach(function (movie) {
-    elMoviesFragment.appendChild(createPokemonEl(movie));
+    elMoviesFragment.appendChild(createMovieEl(movie));
   });
 
   // Append Fragment
