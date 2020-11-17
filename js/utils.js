@@ -13,7 +13,9 @@ var createNewEl = function (tag, className, text) {
 
   var elNew = document.createElement(tag);
   elNew.setAttribute('class', className);
-  elNew.textContent = text;
+  if (text) {
+    elNew.textContent = text;
+  }
 
   return elNew;
 }
