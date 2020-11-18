@@ -22,10 +22,10 @@ var createMovieEl = function (movie) {
   var elMoviesItem = elMoviesTemplate.cloneNode(true);
 
   // Assign values to elements of template
-  elMoviesItem.querySelector('.js-movie__name').textContent = movie.name;
-  elMoviesItem.querySelector('.js-movie__actors').textContent = movie.cast.join(', ');
-  elMoviesItem.querySelector('.js-movie__genre').textContent = movie.genres.join(', ');
-  elMoviesItem.querySelector('.js-movie__year').textContent = movie.year;
+  $_('.js-movie__name', elMoviesItem).textContent = movie.title;
+  $_('.js-movie__actors', elMoviesItem).textContent = movie.cast.join(', ');
+  $_('.js-movie__genre', elMoviesItem).textContent = movie.genres.join(', ');
+  $_('.js-movie__year', elMoviesItem).textContent = movie.year;
 
   // Return element
   return (elMoviesItem);
